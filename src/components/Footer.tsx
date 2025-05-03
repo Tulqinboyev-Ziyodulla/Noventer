@@ -9,15 +9,15 @@ interface TeamMember {
 }
 
 const teamMembers: TeamMember[] = [
-	{ name: 'Abduvoris', surname: 'Mo‘minov', role: 'Developer' },
-	{ name: 'Abduvoris', surname: 'Mo‘minov', role: 'Developer' },
-	{ name: 'Abduvoris', surname: 'Mo‘minov', role: 'Developer' },
-	{ name: 'Abduvoris', surname: 'Mo‘minov', role: 'Developer' },
-	{ name: 'Abduvoris', surname: 'Mo‘minov', role: 'Developer' },
-	{ name: 'Abduvoris', surname: 'Mo‘minov', role: 'Developer' },
-	{ name: 'Abduvoris', surname: 'Mo‘minov', role: 'Developer' },
-	{ name: 'Abduvoris', surname: 'Mo‘minov', role: 'Developer' },
-	{ name: 'Abduvoris', surname: 'Mo‘minov', role: 'Developer' },
+	{ name: 'Sirojbek', surname: 'Rajabboyev', role: 'Developer' },
+	{ name: 'Sirojbek', surname: 'Rajabboyev', role: 'Developer' },
+	{ name: 'Sirojbek', surname: 'Rajabboyev', role: 'Developer' },
+	{ name: 'Sirojbek', surname: 'Rajabboyev', role: 'Developer' },
+	{ name: 'Sirojbek', surname: 'Rajabboyev', role: 'Developer' },
+	{ name: 'Sirojbek', surname: 'Rajabboyev', role: 'Developer' },
+	{ name: 'Sirojbek', surname: 'Rajabboyev', role: 'Developer' },
+	{ name: 'Sirojbek', surname: 'Rajabboyev', role: 'Developer' },
+	{ name: 'Sirojbek', surname: 'Rajabboyev', role: 'Developer' },
 ]
 
 const Footer: React.FC = () => {
