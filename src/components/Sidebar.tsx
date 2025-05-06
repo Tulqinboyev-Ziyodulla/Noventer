@@ -1,49 +1,3 @@
-// import { X } from 'lucide-react'
-// import Image from 'next/image'
-// import Link from 'next/link'
-// import React from 'react'
-
-// interface SidebarProps {
-// 	isOpen: boolean
-// 	onClose: () => void
-// }
-
-// const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
-// 	return (
-// 		<div
-// 			className={`fixed inset-0 z-30 transition-transform transform border-r border-gray-300/20 bg-[#0E041D] w-80 p-5 shadow-lg ${
-// 				isOpen ? 'translate-x-0' : '-translate-x-full'
-// 			}`}
-// 		>
-// 			<div className='flex justify-between mt-4 pb-[18px]'>
-// 				<Link href='/' className='flex  items-center gap-1'>
-// 					<Image src='logo.svg' width={150} height={100} alt='logo' />
-// 				</Link>
-// 				<button
-// 					onClick={onClose}
-// 					className='text-gray-600 text-xl'
-// 					aria-label='Yopish'
-// 				>
-// 					<X />
-// 				</button>
-// 			</div>
-// 			<ul className='mt-5 space-y-3'>
-// 				{['Bosh sahifa', 'Portfolio', 'Xizmatlar', 'Aloqa'].map(
-// 					(item, idx) => (
-// 						<li
-// 							key={idx}
-// 							className='text-lg cursor-pointer font-[Inter] hover:bg-gray-100 p-2 rounded-md text-white'
-// 						>
-// 							{item}
-// 						</li>
-// 					)
-// 				)}
-// 			</ul>
-// 		</div>
-// 	)
-// }
-
-// export default Sidebar
 'use client'
 
 import { AnimatePresence, motion } from 'framer-motion'
@@ -91,7 +45,6 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
 
 		window.addEventListener('keydown', handleEscKey)
 
-		// Prevent scrolling when sidebar is open
 		if (isOpen) {
 			document.body.style.overflow = 'hidden'
 		} else {
@@ -106,7 +59,6 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
 
 	return (
 		<>
-			{/* Backdrop overlay */}
 			<AnimatePresence>
 				{isOpen && (
 					<motion.div
@@ -121,7 +73,6 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
 				)}
 			</AnimatePresence>
 
-			{/* Sidebar */}
 			<motion.div
 				className='fixed inset-y-0 left-0 z-30 w-80 border-r border-gray-300/20 bg-gradient-to-b from-[#0E041D] to-[#1A0B2E] shadow-2xl'
 				initial={{ x: '-100%' }}
@@ -133,7 +84,6 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
 				}}
 			>
 				<div className='relative h-full flex flex-col p-5'>
-					{/* Header */}
 					<div className='flex justify-between items-center pb-6 border-b border-gray-700/30'>
 						<Link href='/' className='flex items-center gap-1'>
 							<Image
@@ -154,7 +104,6 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
 						</motion.button>
 					</div>
 
-					{/* Menu Items */}
 					<nav className='mt-8 flex-grow'>
 						<ul className='space-y-1'>
 							{menuItems.map((item, idx) => (
@@ -212,7 +161,6 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
 						</ul>
 					</nav>
 
-					{/* Language Switcher */}
 					<div className='mt-4 mb-6'>
 						<p className='text-gray-500 text-xs uppercase font-medium mb-2 px-4'>
 							Til
@@ -234,7 +182,6 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
 						</div>
 					</div>
 
-					{/* Footer with Social Links */}
 					<div className='mt-auto pt-4 border-t border-gray-700/30'>
 						<div className='flex justify-center space-x-4'>
 							<motion.a

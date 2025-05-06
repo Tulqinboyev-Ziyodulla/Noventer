@@ -1,42 +1,3 @@
-// import ServiceCard from '@/components/ServiceCard'
-// import Image from 'next/image'
-
-// export default function Servicepage() {
-// 	return (
-// 		<div>
-// 			<div className='py-10 flex items-center justify-center '>
-// 				<div className='container w-10/12 mx-auto px-4 py-16'>
-// 					<div className='grid grid-cols-1 md:grid-cols-2 gap- items-center'>
-// 						<div className='space-y-4'>
-// 							<h1 className='text-5xl md:text-6xl font-bold font-[Inter] text-white'>
-// 								Har bir xizmat turini
-// 							</h1>
-// 							<h2 className='text-4xl md:text-5xl font-bold text-white font-[Inter]'>
-// 								har bir mijoz uchun
-// 							</h2>
-// 							<h2 className='text-4xl md:text-5xl font-bold text-[#7c3aed] font-[Inter]'>
-// 								alohida ahamiyatli
-// 							</h2>
-// 							<h2 className='text-4xl md:text-5xl font-bold text-white font-[Inter]'>
-// 								deb yondoshamiz !
-// 							</h2>
-// 						</div>
-
-// 						<div className='relative h-[500px] grid grid-cols-6 grid-rows-6 gap-4'>
-// 							<Image
-// 								src={'/service.png'}
-// 								alt='Portfolio'
-// 								fill
-// 								className='object-cover col-span-6 row-span-6 rounded-lg shadow-lg'
-// 							/>
-// 						</div>
-// 					</div>
-// 				</div>
-// 			</div>
-// 			<ServiceCard />
-// 		</div>
-// 	)
-// }
 'use client'
 import ServiceCard from '@/components/ServiceCard'
 import Image from 'next/image'
@@ -73,7 +34,6 @@ export default function Servicepage() {
 			<div className='py-10 flex items-center justify-center'>
 				<div className='container w-10/12 mx-auto px-4 py-16'>
 					<div className='grid grid-cols-1 md:grid-cols-2 gap-10 items-center'>
-						{/* Matnlar animatsiyali */}
 						<motion.div
 							className='space-y-4'
 							variants={textVariants}
@@ -95,7 +55,6 @@ export default function Servicepage() {
 							</h2>
 						</motion.div>
 
-						{/* Rasm animatsiyali */}
 						<motion.div
 							className='relative h-[500px] grid grid-cols-6 grid-rows-6 gap-4'
 							variants={imageVariants}
@@ -114,7 +73,6 @@ export default function Servicepage() {
 				</div>
 			</div>
 
-			{/* Xizmat kartalari */}
 			<ServiceCard />
 		</div>
 	)
